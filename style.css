@@ -1,0 +1,927 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+h2,
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 50px;
+  line-height: 0.8;
+}
+h1 {
+  text-align: left;
+  margin: 10% 0% 0% 48.9%;
+}
+#espacop {
+  margin-bottom: 0.5em;
+}
+#Mn {
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  margin: 2% 0% 3% 49%;
+}
+
+p,
+li {
+  color: white;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Lucas {
+  color: #ff6347;
+  font-size: 50px;
+}
+.socialmidia i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6347;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  background: transparent;
+  border: 5px var(#ff6347);
+  border-style: solid;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem;
+  transition: 0.5s ease;
+}
+.socialmidia i:hover {
+  color: #1c1c1c;
+  transform: scale(1.3) translateY(-5px);
+  background-color: #ff6347;
+  box-shadow: 0 0 25px var(#ff6347);
+}
+k {
+  color: #ff6347;
+  font-size: 20px;
+}
+.typing-text {
+  color: #ff6347;
+  font-size: 40px;
+}
+.typing-text::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 1px;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.all,
+.navega {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.all {
+  background-color: rgb(14, 12, 12);
+  box-shadow: 1px 1px 4px;
+  justify-content: space-between;
+  padding: 0 0 0 2em;
+  height: 6em;
+  width: 100%;
+  top: 0;
+  left: 0%;
+  bottom: 0;
+  position: fixed;
+  opacity: 80%;
+  z-index: 3;
+}
+.navega {
+  font-family: Oswald;
+  gap: 3em;
+  margin-right: 5%;
+}
+.navega a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.navega .active {
+  color: #ff6347;
+  text-decoration: underline;
+}
+body {
+  margin: 0;
+}
+#blackmilt {
+  text-align: left;
+  margin: 0% 2% 0% 49%;
+}
+#socialcima {
+  margin: 0% 0% 0% 47.5%;
+  font-size: 10px;
+}
+.navega a:hover {
+  color: #ff6347;
+  transform: scale(1.2);
+}
+#qq {
+  color: #ff6347;
+}
+.conectorP {
+  display: flex;
+  align-items: center;
+  width: 18.6%;
+  height: 2px;
+  background-color: #ff4422;
+}
+.contatos {
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 6em;
+  padding-bottom: 5em;
+}
+.Services {
+  background-color: #1c1c1c;
+  height: 55em;
+}
+#Butao{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin-top: 1em;
+  background-color: #d12106;
+  border-color: white;
+   font-family: "Oswald", sans-serif;
+   transition: 0.8s;
+   cursor: pointer;
+   color: white;
+}
+#Butao:hover{
+  transform: scale(1.1);
+}
+.trilha {
+  background-color: #1c1c1c;
+}
+hr {
+  margin: 0% 0% 0% 0%;
+}
+.inicio img {
+  float: left;  
+  margin: 0% 0% 0% 5%;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px #ff6347;
+  transition: 0.8s;
+  cursor: pointer;
+  width: 450px;
+}
+.inicio img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 14px #ff6347;
+}
+.btn_icon_header {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.slide{
+  display: none;
+  opacity: 0;
+  position: absolute;
+  transition: opacity .2s;
+  overflow: hidden;
+ 
+}
+.ativar{
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  overflow: hidden;
+}
+.slide img{
+  width: 55em;
+  transition: 0.8s;
+}
+.slide-text{
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 5;
+  margin:0;
+  top: 400px;
+  left: 40%;
+  filter: opacity(0%);
+  transition: 500ms;
+}
+.slide:hover > .slide-text{
+  display: block;
+  transform: translateY(-200px);
+  filter: opacity(100%);
+} 
+
+.slide img:hover{
+  filter: brightness(70%);
+  transform: scale(1.05);
+}
+.slideProjetos{
+  display: flex;
+  width: 62.5em;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  margin: auto;
+  margin-bottom: 3em;
+  background-color: #0e0402;
+  border: 2px #d12106 solid;
+  border-radius: 30px;
+}
+.listaProjetos{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30em;
+}
+#next-button, #prev-button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  filter: invert(1);
+}
+#next-button img{
+  rotate: 180deg;
+}
+#next-button img, #prev-button img{
+  width: 100%;
+  height: 100%;
+}
+label{
+  color: white;
+  font-size: 30px;
+}
+input{
+  border-radius: 10px;
+  width: 20em;
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    margin: 0;
+    padding: 0;
+  }
+  .btn_icon_header {
+    display: block;
+  }
+  h1 {
+    text-align: center;
+    justify-content: center !important;
+    margin: 5% 0% 0% 0% !important;
+    font-size: 40px;
+  }
+  .navega {
+    position: fixed;
+    flex-direction: column;
+    top: 30px;
+    width: 35vh;
+    background-color: rgb(14, 12, 12);
+    height: 100%;
+    animation-duration: 0.8s;
+    margin-left: -100vw;
+    z-index: 2;
+  }
+  .inicio {
+    flex-direction: column;
+    height: 1200px;
+    align-items: center;
+  }
+  .all img {
+    margin-right: 50px;
+    padding: 0 !important;
+  }
+  #Lucas {
+    font-size: 40px;
+  }
+  .typing-text {
+    font-size: 35px;
+  }
+  .inicio img {
+    width: 400px;
+    float: none !important;
+    margin: 10% 0% 0% 0% !important;
+    margin-right: 0% !important;
+  }
+  .textonormal {
+    text-align: center !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #Mn {
+    margin: 5% 0% 5% 0% !important;
+    text-align: left !important;
+    font-size: 35px;
+  }
+  #blackmilt {
+    margin: 0% !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #socialcima a {
+    margin: 0% !important;
+  }
+  #socialcima {
+    justify-content: center !important;
+    margin: 0%;
+    display: flex;
+  }
+  .Services {
+    align-items: center;
+    height: 2500px;
+  }
+  .baixoservice,
+  .cimaservice {
+    transform: scale(1.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .baixoservice #tentando,
+  .cimaservice #tentando {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: center;
+  }
+  .baixoservice {
+    margin-top: 10em;
+  }
+  .habilidades {
+    align-items: center;
+    height: 1550px;
+  }
+  .slide img{
+    width: 27em;
+  }
+  .slideProjetos{
+    width: 95%;
+    min-height: 100vh;
+  }
+  .listaProjetos{
+    width: 15em;
+  }
+  .allimages {
+    justify-content: center;
+    margin: 0% 5%;
+    align-items: center;
+    height: auto;
+    width: 0px;
+    padding: 20px 50px 20px 50px !important;
+  }
+  .imagecima,
+  .embaixoimage {
+    right: 100;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px !important;
+  }
+  .htmlclass,
+  .JSclass,
+  .fusion,
+  .cssclass,
+  .inventorclass {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .sal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px !important;
+  }
+  .experiences,
+  .cursos,
+  .university {
+    height: 350px;
+  }
+  .trilha .linha {
+    height: 95% !important;
+    left: 49.5% !important;
+  }
+  #diferente{
+    height: 10em !important;
+  }
+  .certiss {
+    width: 40% !important;
+  }
+  .certiss h2 {
+    transform: scale(0.9);
+  }
+  .right {
+    margin-left: 1% !important;
+  }
+  .left {
+    margin-right: 1% !important;
+  }
+  .conector {
+    width: 3.6% !important;
+  }
+  .conectorP {
+    width: 4% !important;
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 10px) {
+  .btn_icon_header {
+    display: block;
+  }
+  .conectorP {
+    width: 2.8%;
+  }
+  h1 {
+    text-align: center;
+    justify-content: center !important;
+    margin: 5% 0% 0% 0% !important;
+    font-size: 30px;
+  }
+  .navega {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(14, 12, 12);
+    height: 100%;
+    width: 35vw;
+    padding: 1em;
+    animation-duration: 0.8s;
+    margin-left: -100vw;
+    z-index: 2;
+  }
+  .sal h2 {
+    font-size: 30px !important;
+  }
+  .certiss p {
+    font-size: 15px !important;
+  }
+  .slide img{
+    width: 15em;
+  }
+  #text{
+    width: 20em !important;
+  }
+  #diferente{
+    height: 8em !important;
+  }
+  .slideProjetos{
+    width: 95%;
+    min-height: 60vh;
+    gap: 3em;
+  }
+  .listaProjetos{
+    width: 15em;
+  }
+  .trilha .linha {
+    height: 95% !important;
+    left: 49.5%;
+  }
+  .certiss {
+    width: 40% !important;
+  }
+  .inicio {
+    flex-direction: column;
+    height: 1300px;
+    align-items: center;
+  }
+  #Lucas {
+    font-size: 30px;
+  }
+  .certiss h2 {
+    transform: scale(0.8);
+  }
+  .typing-text {
+    font-size: 27.5px;
+  }
+  #socialcima {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% !important;
+  }
+  #socialcima i {
+    justify-content: center;
+  }
+  #socialcima a {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 10% 0% 0% !important;
+  }
+  .inicio img {
+    width: 350px;
+    float: none !important;
+    margin: 10% 0% 0% 0% !important;
+    margin-right: 0% !important;
+  }
+  .textonormal {
+    text-align: center !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #Mn {
+    margin: 5% 0% 5% 0% !important;
+    text-align: left !important;
+    font-size: 27.5px;
+  }
+  #blackmilt {
+    margin: 0% !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Services {
+    align-items: center;
+    height: 2100px;
+  }
+  .baixoservice,
+  .cimaservice {
+    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .baixoservice #tentando,
+  .cimaservice #tentando {
+    width: 500px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: center;
+  }
+  .baixoservice {
+    margin-top: 45px;
+  }
+  .habilidades {
+    align-items: center;
+    height: 1550px;
+  }
+  .allimages {
+    justify-content: center;
+    margin: 0% 5%;
+    align-items: center;
+    height: auto;
+    width: 0px;
+    padding: 20px 50px 20px 50px !important;
+  }
+  .all img {
+    margin-right: 50px;
+    padding: 0 !important;
+  }
+  .imagecima,
+  .embaixoimage {
+    right: 100;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px !important;
+  }
+  .htmlclass,
+  .JSclass,
+  .fusion,
+  .cssclass,
+  .inventorclass {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .serviceimport {
+    margin: 0% 0% 0% 0%;
+  }
+  .sal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px !important;
+  }
+  .experiences,
+  .cursos,
+  .university {
+    height: 350px;
+  }
+  .left {
+    margin-right: 2% !important;
+  }
+  .right {
+    margin-left: 2% !important;
+  }
+  .conector {
+    width: 1% !important;
+  }
+}
+@keyframes mostrar {
+  from {
+    margin-left: -100vw;
+  }
+  top {
+    margin-left: -10vw;
+  }
+}
+.cimaservice {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.cimaservice p {
+  width: 380px;
+  background-color: #ff6347;
+  border-radius: 10%;
+  height: 260px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cimaservice p:hover {
+  color: #ff6347;
+  background-color: #241614;
+  border: 1px solid #ff6347;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px;
+}
+.baixoservice {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.baixoservice p {
+  width: 380px;
+  background-color: #ff6347;
+  border-radius: 10%;
+  height: 260px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.baixoservice p:hover {
+  color: #ff6347;
+  background-color: #241614;
+  border: 1px solid #ff6347;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px;
+}
+#melhors {
+  margin-top: 0;
+}
+.imagecima {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2% 3% 5% 5%;
+  gap: 3em;
+  background-size: cover;
+}
+figcaption {
+  color: #ff4422;
+  font-size: 30px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+}
+
+.htmlclass,
+.JSclass,
+.fusion,
+.cssclass,
+.inventorclass {
+  background-color: black;
+  padding: 30px 70px;
+  border-radius: 10%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.allimages img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+.allimages {
+  align-items: center;
+  justify-content: center;
+  background-color: #250f0b;
+  background-size: 50%;
+  width: 300px;
+  padding: 30px 325px;
+}
+.embaixoimage {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0% 3% 5% 5%;
+  gap: 3em;
+  background-size: cover;
+}
+#diferente{
+  height: 25em;
+}
+.htmlclass:hover,
+.JSclass:hover,
+.fusion:hover,
+.cssclass:hover,
+.inventorclass:hover {
+  box-shadow: 1px 1px 4px #ff6347;
+  transform: scale(1.2);
+}
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 0;
+}
+.serviceimport {
+  font-size: 30px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.sal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.left {
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.right {
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.certiss p {
+  color: black;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  text-align: left;
+}
+.linha {
+  border-radius: 30px;
+  flex-grow: 1;
+  left: 49.5%;
+  width: 1%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.trilha .linha {
+  height: 95%;
+}
+.conector {
+  display: flex;
+  align-items: center;
+  width: 18.4%;
+  height: 2px;
+  background-color: #ff4422;
+}
+.certiss {
+  padding: 1%;
+  background-color: #ff4422;
+  width: 25%;
+  border-radius: 5%;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.certiss:hover {
+  color: #ff6347;
+  background-color: #d12106;
+  border: 1px solid #ff6347;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px;
+}
+.experiences,
+.cursos,
+.university {
+  display: flex;
+  width: 300px;
+  background-color: #ff6347;
+  align-items: center;
+  margin: 0% 0% 0% 0%;
+  flex-direction: column;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+.bordins {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+}
+.experiences:hover,
+.cursos:hover,
+.university:hover {
+  color: #ff6347;
+  background-color: #241614;
+  border: 1px solid #ff6347;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px;
+}
+#meconte {
+  padding-inline: 1em;
+  justify-content: center;
+  background-color: #0e0402;
+}
+#text{
+  width: 30em;
+  height: 10em;
+  align-items: start;
+
+}
+.sumir {
+  color: transparent;
+  margin: 0% 0% 0% 0%;
+}
+#servicos {
+  height: 65px;
+}
+#hab {
+  height: 15px;
+}
+#trr {
+  height: 0.2px;
+}
+.trilha h2 {
+  margin-top: 80px;
+}
+#contats {
+  height: 10px;
+}
+.sal h2 {
+  line-height: 1.1;
+  font-family: "Oswald";
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+  color: black;
+}
+.sal i {
+  font-size: 30px;
+  color: rgb(80, 79, 79);
+  background-color: wheat;
+  padding: 0.75% 0.5%;
+  border-radius: 50%;
+  z-index: 2;
+}
+#books {
+  padding: 0.75% 0.75%;
+}
+
+@media screen and (min-width: 1440px) {
+  h1, #Lucas{
+    font-size: 60px;
+  }
+  #Mn, .typing-text{
+    font-size: 50px;
+  }
+  .inicio img{
+    margin-left: 5%;
+    width: 500px;
+  }
+  #blackmilt, k{
+    font-size: 25px;
+  }
+  .socialmidia i{
+    transform: scale(1.2);
+  }
+  .cimaservice p{
+    transform: scale(1.1);
+  }
+  .baixoservice p{
+    transform: scale(1.1);
+  }
+}
